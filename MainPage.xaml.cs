@@ -16,7 +16,7 @@ namespace rejestracja
             string password = haslo.Text;
             string repairPassword = ponowne_haslo.Text;
 
-            if (string.IsNullOrWhiteSpace(email) || !email.Contains("0"))
+            if (string.IsNullOrWhiteSpace(email) || !email.Contains("@"))
             {
                 wiadomosc.Text = "Nieprawidłowy adres email";
                 return;
